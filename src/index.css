@@ -1,0 +1,10 @@
+/* 1️⃣ Import Google Font first */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 2️⃣ Then import Tailwind */
+@import "tailwindcss";
+
+/* 3️⃣ Your custom font class */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
