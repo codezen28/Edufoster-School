@@ -42,7 +42,7 @@ export default function Navbar() {
             className="flex items-center space-x-3 transform hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="../../public/images/school_logo.jpg"
+              src="/images/school_logo.jpg"
               alt="Logo"
               className="h-10 w-10 object-contain"
             />
