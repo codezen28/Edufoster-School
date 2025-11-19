@@ -46,15 +46,15 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end">
           <h3 className="font-semibold mb-2">Follow Us</h3>
           <div className="flex gap-3 text-sm">
-            <motion.a
+            {/* <motion.a
               href="#"
               whileHover={{ scale: 1.2 }}
               className="hover:text-teal-400 transition-all duration-300 hover:drop-shadow-lg"
             >
               <FaFacebookF />
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href="#"
+              href="https://www.instagram.com/edu_fosterschoolkhajuraho/?hl=en"
               whileHover={{ scale: 1.2 }}
               className="hover:text-teal-400 transition-all duration-300 hover:drop-shadow-lg"
             >
@@ -80,16 +80,29 @@ export default function Footer() {
         </p>
 
         {/* Bottom-right credit */}
-        <motion.p
-          className="flex items-center gap-1 mt-2 md:mt-0 justify-center md:justify-end hover:drop-shadow-lg"
-          whileHover={{ scale: 1.05 }}
-        >
-          Created by <span className="font-semibold">Vaibhav Gupta</span> | 
-          <PhoneIcon className="w-4 h-4 inline" />
-          <a href="tel:9993093350" className="underline hover:text-teal-400 transition-all duration-300">
-            9993093350
-          </a>
-        </motion.p>
+     <motion.p
+  className="flex items-center gap-1 mt-2 md:mt-0 justify-center md:justify-end hover:drop-shadow-lg"
+  whileHover={{ scale: 1.05 }}
+>
+  Created by{" "}
+  <a
+    href="https://www.navtrixtechnolabs.in"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold underline hover:text-teal-400 transition-all duration-300"
+  >
+    Navtrix Techno Labs
+  </a>{" "}
+  | 
+  <PhoneIcon className="w-4 h-4 inline" />
+  <a
+    href="tel:9993093350"
+    className="underline hover:text-teal-400 transition-all duration-300"
+  >
+    9993093350
+  </a>
+</motion.p>
+
       </div>
 
       {/* Tailwind Custom Animation */}
