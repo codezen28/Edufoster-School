@@ -92,21 +92,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <Link
-              href="/admissions"
-              className="inline-block bg-teal-500 text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-teal-600 transition transform hover:scale-105"
-            >
-              Admissions Open
-            </Link>
-          </motion.div>
-
+        
         </div>
       </section>
 
