@@ -99,12 +99,12 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <a
+            <Link
               href="/admissions"
               className="inline-block bg-teal-500 text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-teal-600 transition transform hover:scale-105"
             >
               Admissions Open
-            </a>
+            </Link>
           </motion.div>
 
         </div>
