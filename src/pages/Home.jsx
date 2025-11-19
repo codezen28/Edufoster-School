@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -35,14 +36,16 @@ export default function Home() {
             Empowering students through excellence in education, values, and
             innovation.
           </p>
-          <motion.a
-            href="/admissions"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition duration-300"
-          >
-            Apply Now
-          </motion.a>
+
+          {/* ⭐ USING LINK INSTEAD OF <a> */}
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              to="/admissions"
+              className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition duration-300"
+            >
+              Apply Now
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -90,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📘 UPDATED ACADEMICS SECTION (WITH KINDERGARTEN) */}
+      {/* 📘 Academics Section (Updated + Kindergarten) */}
       <section className="py-16 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <motion.h2
@@ -130,8 +133,7 @@ export default function Home() {
                 Primary (Classes 1–5)
               </h3>
               <p className="text-gray-700">
-                Focus on fundamentals, creativity, joyful learning, and
-                confidence building.
+                Fundamentals, creativity, joyful learning & confidence building.
               </p>
             </motion.div>
 
@@ -154,7 +156,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🏫 UPDATED ADMISSIONS CTA SECTION */}
+      {/* 🏫 Admissions CTA Section */}
       <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-500 text-white text-center relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -166,17 +168,18 @@ export default function Home() {
             Admissions Open for 2025–26
           </h2>
           <p className="mb-8 text-lg md:text-xl text-teal-100">
-            Join a school where every child’s potential is celebrated and
-            nurtured.
+            Join a school where every child’s potential is nurtured.
           </p>
-          <motion.a
-            href="/admissions"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-white text-teal-600 font-semibold px-10 py-3 rounded-full shadow-lg hover:bg-teal-50 transition"
-          >
-            Apply Now
-          </motion.a>
+
+          {/* ⭐ USING LINK HERE TOO */}
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              to="/admissions"
+              className="inline-block bg-white text-teal-600 font-semibold px-10 py-3 rounded-full shadow-lg hover:bg-teal-50 transition"
+            >
+              Apply Now
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
     </div>
