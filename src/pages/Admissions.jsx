@@ -7,15 +7,15 @@ export default function Admissions() {
   const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
-    // Create a hidden link to trigger download
+    // Create hidden link to trigger the download from PUBLIC folder
     const link = document.createElement("a");
-    link.href = "/assets/Admission Form.pdf"; 
+    link.href = "/Admission Form.pdf"; // Correct public path
     link.download = "Admission Form.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 
-    // Show popup
+    // Show success popup
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 2500);
   };
@@ -36,7 +36,7 @@ export default function Admissions() {
         </motion.div>
       )}
 
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section className="relative min-h-screen md:h-80 flex items-center justify-center text-center">
         <div
           className="absolute inset-0 w-full h-full object-cover brightness-50"
@@ -61,7 +61,7 @@ export default function Admissions() {
         </motion.div>
       </section>
 
-      {/* Admission Steps */}
+      {/* ADMISSION PROCESS */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-12">
           <motion.h2
@@ -94,7 +94,7 @@ export default function Admissions() {
             ))}
           </div>
 
-          {/* Download Form Button */}
+          {/* DOWNLOAD BUTTON */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -111,7 +111,7 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* Contact Info Section */}
+      {/* CONTACT SECTION */}
       <section className="py-16 bg-teal-500 text-white text-center relative">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -121,6 +121,7 @@ export default function Admissions() {
         >
           Need Help?
         </motion.h2>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -140,6 +141,7 @@ export default function Admissions() {
           <p>Phone: <span className="font-semibold">9425385960</span></p>
         </motion.div>
 
+        {/* Decorative Circles */}
         <div className="absolute -top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-white/10 rounded-full blur-3xl"></div>
       </section>
