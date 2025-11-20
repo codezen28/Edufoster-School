@@ -155,6 +155,53 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* 🖼️ Gallery Preview — Only 3 Images (Photo4, Photo5, Photo6) */}
+<section className="py-16 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <motion.h2
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-3xl md:text-4xl font-bold mb-10 text-teal-700"
+    >
+      School Moments
+    </motion.h2>
+
+    {/* 3-PHOTO GRID */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {[
+        "/assets/images/Photo4.jpg",
+        "/assets/images/Photo5.jpg",
+        "/assets/images/Photo6.jpg",
+      ].map((img, i) => (
+        <motion.img
+          key={i}
+          src={img}
+          alt={`Gallery Preview ${i + 1}`}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: i * 0.2, duration: 0.6 }}
+          className="rounded-lg shadow-lg object-cover w-full h-56 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+      ))}
+    </div>
+
+    {/* View More Photos → Redirect to Gallery Page */}
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="mt-8"
+    >
+      <Link
+        to="/gallery"
+        className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-teal-600 transition"
+      >
+        View More Photos
+      </Link>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* 🏫 Admissions CTA Section */}
       <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-500 text-white text-center relative overflow-hidden">
