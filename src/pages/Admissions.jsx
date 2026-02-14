@@ -56,7 +56,7 @@ export default function Admissions() {
             <span className="text-teal-400">Admissions</span> Open
           </h1>
           <p className="text-lg md:text-xl font-medium drop-shadow-md">
-            Join Edufoster School for the Academic Year 2025–26
+            Join Edufoster School for the Academic Year 2026–27 and unlock your child’s potential!
           </p>
         </motion.div>
       </section>

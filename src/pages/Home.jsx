@@ -212,7 +212,7 @@ export default function Home() {
           className="relative z-10 px-6"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Admissions Open for 2025–26
+            Admissions Open for 2026–27
           </h2>
           <p className="mb-8 text-lg md:text-xl text-teal-100">
             Join a school where every child’s potential is nurtured.
